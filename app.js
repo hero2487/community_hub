@@ -1,13 +1,24 @@
 var express = require('express');
 var app = express();
 
+// Mysql接続
+const mysql = require('mysql');
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: 'root',
+  database: 'gs_db'
+});
+
+connection.query('SELECT*FROM akiya_bukken',
+(error, results)=>{
+  console.log(results);
+}
+);
 
 // EJS設定
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
-
-
-
 
 var createError = require('http-errors');
 var express = require('express');

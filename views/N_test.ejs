@@ -1,6 +1,41 @@
+<!DOCTYPE html>
 <html>
-    <body>
-        <p><%= message %></p>
-        <p><%- message %></p>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <title>Community_Hub</title>
+    <link rel="stylesheet" href="/stylesheets/N_top.css">
+    <script src="/send_url.js"></script>
+    <a href="/">戻る</a>
+  </head>
+  <body>
+    <div class="top-wrapper">
+      <div class="top-detail">
+        <h2 class="subtitle">Community_Hub</h2>
+        <h1 class="title">てすと</h1>
+        <p class="description">
+          Community_Hub。コミュニティが集まるコミュニティ
+          <br>
+          それは、全ての人が出会うべき人と繋がるツール。
+        </p>
+        <a class="index-button">一覧を見る</a>
+      </div>
+    </div>
+    <% const items = [
+    {id: 1, name: 'じゃがいも'},
+    {id: 2, name: 'にんじん'},
+    {id: 3, name: 'たまねぎ'}
+    ]; %>
+
+<ul>
+    <% items.forEach((vegit) => { %>
+    <li>
+        <span><%= vegit.id %></span>
+        <span><%= vegit.name %></span>
+    </li>
+    <% }); %>
+</ul>
+
+
+
+  </body>
 </html>
