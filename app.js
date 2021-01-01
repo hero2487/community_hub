@@ -1,3 +1,14 @@
+var express = require('express');
+var app = express();
+
+
+// EJS設定
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+
+
+
+
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -39,3 +50,7 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+app.listen(3000, function() {
+  console.log('Example app listening on port 3000!');
+});
