@@ -7,7 +7,7 @@ const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: 'root',
-  database: 'gs_db'
+  database: 'node_Community_hub'
 });
 
 connection.query('SELECT*FROM akiya_bukken',
