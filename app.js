@@ -7,16 +7,17 @@ const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: 'root',
-  database: 'node_Community_hub'
+  database: 'gs_db'
+  // database: 'node_Community_hub'
 });
 
-connection.query('SELECT*FROM akiya_bukken',
-(error, results)=>{
-  console.log(results);
-}
-);
+// connection.query('SELECT*FROM akiya_bukken',
+// (error, results)=>{
+//   console.log(results);
+// }
+// );
 
-// EJS設定
+// // EJS設定
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
@@ -62,6 +63,11 @@ app.use(function(err, req, res, next) {
 
 module.exports = app;
 
+
+
 app.listen(3000, function() {
   console.log('Example app listening on port 3000!');
 });
+
+
+
