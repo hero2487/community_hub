@@ -1,0 +1,31 @@
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>ログイン画面</title>
+      <link rel="stylesheet" href="/stylesheets/style.css">
+      <script src="/send_url.js"></script>
+    </head>
+    <body>
+      <header>
+        <a href="/" class="header-logo">Community_Hub</a>
+      </header>
+      <div class="container">
+        <div class="container-header">
+          <h1>ログイン</h1>
+        </div>
+        <div class="item-form-wrapper">
+          <p class="form-label">ログイン</p>
+          <!-- formタグを追加してください -->
+
+          <form name="form1" action="login_act.php" method="post">
+            <label for="">ID:<br><input type="text" name="lid"></label>
+            <label for="">PW:<br><input type="password" name="lpw"></label>
+            <input type="submit" value="LOGIN">
+          </form>
+          <a href="/N_newAccount">新規登録</a>
+        </div>
+      </div>
+    </body>
+  </html>
+
+
