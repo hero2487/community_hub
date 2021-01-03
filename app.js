@@ -15,7 +15,7 @@ const connection = mysql.createConnection({
 // (error, results)=>{
 //   console.log(results);
 // }
-// );
+// ); 
 
 // // EJS設定
 app.set('views', __dirname + '/views');

@@ -1,0 +1,91 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>コミュニティ登録</title>
+      <link rel="stylesheet" href="/stylesheets/style.css">
+      <script src="/send_url.js"></script>
+    </head>
+    <body>
+      <header>
+        <a href="/" class="header-logo">Community_Hub</a>
+      </header>
+      <div class="container">
+        <div class="container-header">
+          <h1>コミュニティ登録</h1>
+        </div>
+        <div class="item-form-wrapper">
+          <p class="form-label">コミュニティ情報を登録して下さい</p>
+          <!-- formタグを追加してください -->
+          <form method="post" action="/communityInsert">
+            <div class="jumbotron">
+                <fieldset>
+                  <label>分野<br>
+                    <select name="field" id="">
+                        <option value="IT">IT</option>
+                        <option value="営業">営業</option>
+                        <option value="医療">医療</option>
+                        <option value="ジム・スポーツ">ジム・スポーツ</option>
+                        <option value="地域コミュニティ">地域コミュニティ</option>
+                        <option value="副業・ビジネス">副業・ビジネス</option>
+                        <option value="福祉">福祉</option>
+                        <option value="不動産関連">不動産関連</option>
+                        <option value="eスポーツ関連">eスポーツ関連</option>
+                        <option value="アウトドア">アウトドア</option>
+                        <option value="音楽">音楽</option>
+                    </select>
+                  </label><br>
+                  <label>スキル<br>
+                    <input type="checkbox" name="skill" value="サーバーサイド">サーバーサイド
+                    <input type="checkbox" name="skill" value="フロントエンド">フロントエンド
+                    <input type="checkbox" name="skill" value="営業">営業
+                    <input type="checkbox" name="skill" value="マーケティング">マーケティング
+                    <input type="checkbox" name="skill" value="デザイン">デザイン
+                    <input type="checkbox" name="skill" value="Eコマース">Eコマース
+                    <input type="checkbox" name="skill" value="税金知識">税金知識
+                    <input type="checkbox" name="skill" value="投資">投資
+                    <input type="checkbox" name="skill" value="会計">会計
+                    <input type="checkbox" name="skill" value="建築関連">建築関連
+                    <input type="checkbox" name="skill" value="投資不動産">投資不動産
+                    <input type="checkbox" name="skill" value="居住不動産">居住不動産
+                    <input type="checkbox" name="skill" value="英語">英語
+                    <input type="checkbox" name="skill" value="中国語">中国語
+                    <input type="checkbox" name="skill" value="経営">経営
+                    <input type="checkbox" name="skill" value="小売業">小売業
+                    <input type="checkbox" name="skill" value="農業">農業
+                    <input type="checkbox" name="skill" value="ジムトレーナー">ジムトレーナー
+                    <input type="checkbox" name="skill" value="小売業">小売業
+                </label><br>
+                  <label>目的
+                    <input type="text" id="" class="" value="" name="purpose"></label><br>
+                   <label>目標<input type="text" id="" class="" value="" name="goal"></label><br>
+                   <label>今のレベル(MAX5)<br>
+                      <input type="radio" name="current_level" value="1">1
+                      <input type="radio" name="current_level" value="2">2
+                      <input type="radio" name="current_level" value="3">3
+                      <input type="radio" name="current_level" value="4">4
+                      <input type="radio" name="current_level" value="5">5
+                  </label><br>
+                  <label>希望<br>
+                    <input type="radio" name="Desired" value="オン">オン
+                    <input type="radio" name="Desired" value="オフ">オフ
+                  </label><br>
+                  <label>居住地（市）<br>
+                    <input type="text" id="" class="" value="" name="place"></label><br>
+                  <label>移動範囲（移動時間目安）<br>
+                    <input type="radio" name="can_range" value="20">20分
+                    <input type="radio" name="can_range" value="40">40分
+                    <input type="radio" name="can_range" value="60">60分
+                    <input type="radio" name="can_range" value="90">無限
+                  </label><br>
+
+                    <input type="submit" value="送信">
+                </fieldset>
+            </div>
+        </form>
+          <a href="/N_login">戻る</a>
+        </div>
+      </div>
+    </body>
+  </html>
+
+
